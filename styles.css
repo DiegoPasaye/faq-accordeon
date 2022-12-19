@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+html{
+    background-image: linear-gradient(to bottom right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70vw;
+    margin-left: 15vw;
+    background-color: white;
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-position: -60vh -15vw;
+    background-size: 60vw;
+    background-repeat: no-repeat;
+    margin-top: 15vh;
+    border-radius: 10px;
+}
+.left .ilustration{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: -5vw;
+    display: block;
+    width: 100%;
+}
+
+.box{
+    width: 12vw;
+    position: absolute;
+    margin-top: 13vw;
+    margin-left: -6vw;
+}
+.right{
+    width: 26vw;
+    margin-top: 3vh;
+}
+.right span{
+    color: hsl(240, 6%, 50%);
+}
+.right h1{
+    font-weight: 700;
+}
+
+.questions{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    cursor: pointer;
+}
+.questions img{
+    width: 0.8vw;
+    height: 1vh;
+    margin-top: 1vh;
+    margin-left: auto;
+}
+
+.subaccordeon img{
+    margin-left: auto;
+}
+
+.info{
+    display: none;
+}
