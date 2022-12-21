@@ -15,48 +15,84 @@ const block2 = document.querySelector(".block2")
 const block3 = document.querySelector(".block3")
 const block4 = document.querySelector(".block4")
 const block5 = document.querySelector(".block5")
-estado = ""
+let estado = "apagado"
 
 
 
 const active1 = () =>{
-    info1.style.display = "block"
-    info1.style.color = "hsl(240, 6%, 50%)"
-    estado = "activo"
-    question1.style.color = "black"
-}
-const active2 = () =>{
-    info2.style.display = "block"
-    info2.style.color = "hsl(240, 6%, 50%)"
-    estado = "activo"
-    question2.style.color = "black"
-}
-const active3 = () =>{
-    info3.style.display = "block"
-    info3.style.color = "hsl(240, 6%, 50%)"
-    estado = "activo"
-    question3.style.color = "black"
-}
-const active4 = () =>{
-    info4.style.display = "block"
-    info4.style.color = "hsl(240, 6%, 50%)"
-    estado = "activo"
-    question4.style.color = "black"
-}
-const active5 = () =>{
-    info5.style.display = "block"
-    info5.style.color = "hsl(240, 6%, 50%)"
-    estado = "activo"
-    question5.style.color = "black"
+    if(estado == "apagado"){
+        info1.style.display = "block"
+        info1.style.color = "hsl(240, 6%, 50%)"
+        question1.style.color = "black"
+        estado = "activo"
+    }else if(estado == "activo"){
+        info1.style.display = "none"
+        question1.style.color = "hsl(240, 6%, 50%)"
+        info1.style.color = "black"
+        estado = "apagado"
+    }
 }
 
-const ocultar = () =>{
-    info1.style.display = "none"
-    estado = "oculto"
+
+const active2 = () =>{
+    if(estado == "apagado"){
+        info2.style.display = "block"
+        info2.style.color = "hsl(240, 6%, 50%)"
+        question2.style.color = "black"
+        estado = "activo"
+    }else if(estado == "activo"){
+        info2.style.display = "none"
+        question2.style.color = "hsl(240, 6%, 50%)"
+        info2.style.color = "black"
+        estado = "apagado"
+    }
 }
+const active3 = () =>{
+    if(estado == "apagado"){
+        info3.style.display = "block"
+        info3.style.color = "hsl(240, 6%, 50%)"
+        question3.style.color = "black"
+        estado = "activo"
+    }else if(estado == "activo"){
+        info3.style.display = "none"
+        question3.style.color = "hsl(240, 6%, 50%)"
+        info3.style.color = "black"
+        estado = "apagado"
+    }
+}
+const active4 = () =>{
+    if(estado == "apagado"){
+        info4.style.display = "block"
+        info4.style.color = "hsl(240, 6%, 50%)"
+        question4.style.color = "black"
+        estado = "activo"
+    }else if(estado == "activo"){
+        info4.style.display = "none"
+        question4.style.color = "hsl(240, 6%, 50%)"
+        info4.style.color = "black"
+        estado = "apagado"
+    }
+}
+const active5 = () =>{
+    if(estado == "apagado"){
+        info5.style.display = "block"
+        info5.style.color = "hsl(240, 6%, 50%)"
+        question5.style.color = "black"
+        estado = "activo"
+    }else if(estado == "activo"){
+        info5.style.display = "none"
+        question5.style.color = "hsl(240, 6%, 50%)"
+        info5.style.color = "black"
+        estado = "apagado"
+    }
+}
+
+
 
 block1.addEventListener("click", active1);
 block2.addEventListener("click", active2);
 block3.addEventListener("click", active3);
 block4.addEventListener("click", active4);
 block5.addEventListener("click", active5);
+
+
