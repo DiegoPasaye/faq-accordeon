@@ -28,6 +28,7 @@ const active1 = () =>{
     if(estado == "apagado"){
         info1.style.display = "block"
         info1.style.color = "hsl(240, 6%, 50%)"
+        info1.style.animation = "fadeIn 1s"
         question1.style.color = "black"
         arrow1.style.transform = "scaleY(-1)"
         estado = "activo"

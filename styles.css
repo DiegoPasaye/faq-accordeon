@@ -22,6 +22,7 @@ p{
     background-repeat: no-repeat;
     margin-top: 15vh;
     border-radius: 10px;
+    padding-bottom: 4vh;
 }
 .left .ilustration{
     padding-top: 5vh;
@@ -55,6 +56,10 @@ p{
     padding-bottom: 1vh;
     cursor: pointer;
 }
+.questions :hover{
+    animation: color 0.5s;
+    animation-fill-mode: forwards;
+}
 .questions img{
     width: 0.8vw;
     height: 1vh;
@@ -68,4 +73,13 @@ p{
 
 .info{
     display: none;
+}
+
+@keyframes fadeIn{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+@keyframes color{
+    0%{color:hsl(240, 6%, 50%);}
+    100%{color: hsl(14, 88%, 65%);}
 }
