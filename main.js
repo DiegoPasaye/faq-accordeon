@@ -46,6 +46,7 @@ const active2 = () =>{
     if(estado == "apagado"){
         info2.style.display = "block"
         info2.style.color = "hsl(240, 6%, 50%)"
+        info2.style.animation = "fadeIn 1s"
         question2.style.color = "black"
         arrow2.style.transform = "scaleY(-1)"
         estado = "activo"
@@ -61,6 +62,7 @@ const active3 = () =>{
     if(estado == "apagado"){
         info3.style.display = "block"
         info3.style.color = "hsl(240, 6%, 50%)"
+        info3.style.animation = "fadeIn 1s"
         question3.style.color = "black"
         arrow3.style.transform = "scaleY(-1)"
         estado = "activo"
@@ -76,6 +78,7 @@ const active4 = () =>{
     if(estado == "apagado"){
         info4.style.display = "block"
         info4.style.color = "hsl(240, 6%, 50%)"
+        info4.style.animation = "fadeIn 1s"
         question4.style.color = "black"
         arrow4.style.transform = "scaleY(-1)"
         estado = "activo"
@@ -91,6 +94,7 @@ const active5 = () =>{
     if(estado == "apagado"){
         info5.style.display = "block"
         info5.style.color = "hsl(240, 6%, 50%)"
+        info5.style.animation = "fadeIn 1s"
         question5.style.color = "black"
         arrow5.style.transform = "scaleY(-1)"
         estado = "activo"
