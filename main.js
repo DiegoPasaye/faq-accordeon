@@ -17,6 +17,11 @@ const block4 = document.querySelector(".block4")
 const block5 = document.querySelector(".block5")
 let estado = "apagado"
 
+const arrow1 = document.querySelector(".arrow1")
+const arrow2 = document.querySelector(".arrow2")
+const arrow3 = document.querySelector(".arrow3")
+const arrow4 = document.querySelector(".arrow4")
+const arrow5 = document.querySelector(".arrow5")
 
 
 const active1 = () =>{
@@ -24,11 +29,13 @@ const active1 = () =>{
         info1.style.display = "block"
         info1.style.color = "hsl(240, 6%, 50%)"
         question1.style.color = "black"
+        arrow1.style.transform = "scaleY(-1)"
         estado = "activo"
     }else if(estado == "activo"){
         info1.style.display = "none"
         question1.style.color = "hsl(240, 6%, 50%)"
         info1.style.color = "black"
+        arrow1.style.transform = "scaleY(1)"
         estado = "apagado"
     }
 }
@@ -39,11 +46,13 @@ const active2 = () =>{
         info2.style.display = "block"
         info2.style.color = "hsl(240, 6%, 50%)"
         question2.style.color = "black"
+        arrow2.style.transform = "scaleY(-1)"
         estado = "activo"
     }else if(estado == "activo"){
         info2.style.display = "none"
         question2.style.color = "hsl(240, 6%, 50%)"
         info2.style.color = "black"
+        arrow2.style.transform = "scaleY(1)"
         estado = "apagado"
     }
 }
@@ -52,11 +61,13 @@ const active3 = () =>{
         info3.style.display = "block"
         info3.style.color = "hsl(240, 6%, 50%)"
         question3.style.color = "black"
+        arrow3.style.transform = "scaleY(-1)"
         estado = "activo"
     }else if(estado == "activo"){
         info3.style.display = "none"
         question3.style.color = "hsl(240, 6%, 50%)"
         info3.style.color = "black"
+        arrow3.style.transform = "scaleY(1)"
         estado = "apagado"
     }
 }
@@ -65,11 +76,13 @@ const active4 = () =>{
         info4.style.display = "block"
         info4.style.color = "hsl(240, 6%, 50%)"
         question4.style.color = "black"
+        arrow4.style.transform = "scaleY(-1)"
         estado = "activo"
     }else if(estado == "activo"){
         info4.style.display = "none"
         question4.style.color = "hsl(240, 6%, 50%)"
         info4.style.color = "black"
+        arrow4.style.transform = "scaleY(1)"
         estado = "apagado"
     }
 }
@@ -78,11 +91,13 @@ const active5 = () =>{
         info5.style.display = "block"
         info5.style.color = "hsl(240, 6%, 50%)"
         question5.style.color = "black"
+        arrow5.style.transform = "scaleY(-1)"
         estado = "activo"
     }else if(estado == "activo"){
         info5.style.display = "none"
         question5.style.color = "hsl(240, 6%, 50%)"
         info5.style.color = "black"
+        arrow5.style.transform = "scaleY(1)"
         estado = "apagado"
     }
 }
