@@ -83,3 +83,63 @@ p{
     0%{color:hsl(240, 6%, 50%);}
     100%{color: hsl(14, 88%, 65%);}
 }
+@media (max-width: 930px){
+    .container{
+        background-position: -10vw 5vw;
+        background-size: 45vw;
+    }
+    .left{
+        display: flex;
+    }
+    .box{
+        position: absolute;
+        top: 28%;
+        width: 15vw;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        margin-left: 5%;
+        padding-top: 10vw;
+        background-size: 70vw;
+        background-position: center -35vw;
+    }
+    .left .ilustration{
+        width: 80%;
+        position: relative;
+        left: 10%;
+        padding-top: 0;
+        margin-left: 0;
+        padding-bottom: 0;
+        top: -40vw;
+        z-index: 1;
+    }
+    .box{
+        width: 25vw;
+        position: absolute;
+        top: -3vw;
+        z-index: 10;
+        left: 25vw;
+    }
+    .right{
+        margin-top: -35vw;
+        width: 90%;
+        margin-left: 5%;
+    }
+    h1{
+        text-align: center;
+    }
+    .questions{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .questions img{
+        margin-left: 0;
+        width: 2.5vw;
+    }
+}
